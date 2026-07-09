@@ -1,9 +1,4 @@
-import axios from "axios";
-
-const api = axios.create({
-    baseURL:  "https://interview-ai-backend-9ujm.onrender.com",
-    withCredentials: true,
-})
+import { api } from "../../auth/services/auth.api"
 
 
 /**

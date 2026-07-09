@@ -1,7 +1,7 @@
 import axios from "axios"
 
 
-const api = axios.create({
+export const api = axios.create({
     baseURL: "https://interview-ai-backend-9ujm.onrender.com",
     withCredentials: true
 })
