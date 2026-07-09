@@ -91,7 +91,7 @@ async function loginUserController(req, res) {
     // res.cookie("token", token)  works locally
     res.cookie("token", token, {
         httpOnly: true,
-        secure: true,
+        secure: false,
         sameSite: "none",
         maxAge: 24 * 60 * 60 * 1000 // 1 day
     });
@@ -124,7 +124,7 @@ async function logoutUserController(req, res) {
 
     res.clearCookie("token", {
         httpOnly: true,
-        secure: true,
+        secure: false,
         sameSite: "none"
     });
 
