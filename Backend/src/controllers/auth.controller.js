@@ -52,6 +52,7 @@ async function registerUserController(req, res) {
 
     res.status(201).json({
         message: "User registered successfully",
+        token, // auth based
         user: {
             id: user._id,
             username: user.username,
@@ -111,6 +112,7 @@ async function loginUserController(req, res) {
 
     res.status(200).json({
         message: "User loggedIn successfully.",
+        token, // switching to authorization based
         user: {
             id: user._id,
             username: user.username,
