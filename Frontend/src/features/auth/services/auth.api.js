@@ -60,6 +60,8 @@ export async function logout() {
     try {
 
         const response = await api.get("/api/auth/logout")
+        
+        localStorage.removeItem("token")
 
         return response.data
 
@@ -73,8 +75,6 @@ export async function getMe() {
     try {
 
         const response = await api.get("/api/auth/get-me")
-
-        localStorage.removeItem("token") // 👈 add
 
         return response.data
 
