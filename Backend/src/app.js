@@ -9,7 +9,7 @@ app.use(cookieParser())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://interview-ai-sable-iota.vercel.app"
+        "interview-ai-git-main-ayushpraj2004-gmailcoms-projects.vercel.app"
     ],
     credentials: true
 }))
